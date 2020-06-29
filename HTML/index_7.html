@@ -2,31 +2,48 @@
 <html lang="ja">
     <head>
         <mete charset="UTF-8">
-        <title>HTMLの学習 | 7-1,2,3</title>
+        <title>HTMLの学習 | 7-1~5</title>
     </head>
     <body>
-        <input type="text" name="name"><br>
-        <input type="password" name="pass"><br>
-        <textarea name="infp" cols="80" rows="4"></textarea><br>
-        <br>
-        <input type="radio" name="gender" value="male">男性<br>
-        <input type="radio" name="gender" value="female">女性<br>
-        <br>
-        <input type="checkbox" name="music" value="jazz">Jazz<br>
-        <input type="checkbox" name="music" value="pops">Pops<br>
-        <input type="checkbox" name="music" value="rock">Rock<br>
-        <br>
-        <select name="address">
-            <optgroup label="関東">
-                <option value="tokyo">東京</option>
-                <option value="chiba">千葉</option>
-                <option value="saitama">埼玉</option>
-            </optgroup>
-            <optgroup label="関西">
-                <option value="osaka">大阪</option>
-                <option value="hyogo">兵庫</option>
-                <option value="kyoto">京都</option>
-            </optgroup>
-        </select>
+        <form method="POST" action="#">
+            <fieldset>
+                <legend>IDとパスワード</legend>
+                <label for="name">ID</label><input type="text" name="name" id="name"><br>
+                <label for="pass">Password</label><input type="password" name="pass" id="pass"><br>
+            </fieldset>
+            <!-- <textarea name="infp" cols="80" rows="4"></textarea><br> -->
+            <br>
+            <fieldset>
+                <legend>性別</legend>
+                <input type="radio" name="gender" value="male" id="male"><label for="male">男性</label><br>
+                <input type="radio" name="gender" value="female" id="female"><label for="female">女性</label><br>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>好きな音楽</legend>
+                <input type="checkbox" name="music" value="jazz">Jazz<br>
+                <input type="checkbox" name="music" value="pops">Pops<br>
+                <input type="checkbox" name="music" value="rock">Rock<br>
+                <button>何も起こらないボタン</button>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>住所</legend>
+                <select name="address">
+                    <optgroup label="関東">
+                        <option value="tokyo">東京</option>
+                        <option value="chiba">千葉</option>
+                        <option value="saitama">埼玉</option>
+                    </optgroup>
+                    <optgroup label="関西">
+                        <option value="osaka">大阪</option>
+                        <option value="hyogo">兵庫</option>
+                        <option value="kyoto">京都</option>
+                    </optgroup>
+                </select>
+                <textarea name="address2"></textarea>
+            </fieldset>
+            <input type="submit" value="送信">
+        </form>
     </body>
 </html>
