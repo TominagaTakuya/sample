@@ -1,0 +1,14 @@
+@charset "utf-8";
+div {
+	margin: 50px auto;
+	font: 1.1em/1.5 sans-serif;
+	box-sizing: border-box;
+}
+
+.sketch-img {
+	width: 700px;
+	height: 500px;
+	border-radius: 10px;
+	background: url('img.jpeg') no-repeat 350px 200px, url('night.jpg') no-repeat 50px 50px, url('sky.jpg');
+	background-size: 250px 200px, 50% 40%, 110%
+}

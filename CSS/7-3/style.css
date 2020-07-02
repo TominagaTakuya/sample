@@ -1,0 +1,20 @@
+@charset "utf-8";
+div {
+	margin: 50px auto;
+	font: 1.1em/1.5 sans-serif;
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+}
+
+.box {
+	width: 80%
+	height: 500px;
+	padding: 30px;
+	background: url('screen.png') no-repeat center;
+	border: 15px solid rgba(35, 66, 97, .6);
+	background-size: contain;
+	background-clip: padding-box;
+}
