@@ -1,0 +1,129 @@
+body {
+	background-color: #e8f3f8;
+	font: 1em/1.5 sans-serif;
+}
+
+.phone {
+	margin: 55px 0;
+	font: 3em sans-serif;
+}
+
+a {
+	color: royalblue;
+	text-decoration: none;
+	font: 2.25em sans-serif;
+}
+
+/* 疑似要素を使うと 1-5 */
+.phone::before {
+	content: "\2706";
+}
+
+.phone::after {
+	content: url('#');
+}
+
+.dload::before,
+.dload::after {
+	content: "";
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background-color: royalblue;
+	border-radius: 50%;
+	margin: 1px;
+}
+
+.dload {
+	border: 1px solid;
+	padding: 10px;
+}
+
+.intro {
+	color: #222;
+	margin: 80px auto;
+	width: 60%;
+}
+
+/* 疑似要素を使うと 1-4 */
+.intro::first-line {
+	color: royalblue;
+	font-weight: bold;
+	font-size: 32px;
+}
+
+.intro::first-letter {
+	float: left;
+	margin: 10px;
+	padding: 5px;
+	background-color: grey;
+	font-size: 100px;
+}
+
+form {
+	margin: 80px auto;
+	width: 320px;
+	color: steelblue;	
+}
+
+input {
+	padding:  10px;
+	border-radius: 5px;
+	font-size: inherit;
+}
+input[type="text"] {
+	display: black;
+	margin-bottom: 25px;
+	width: 100%;
+	border: 2px solid steelblue;
+}
+
+input[type="radio"] {
+	margin:  0 8px 25px 10px;
+}
+
+input[type="radio"]:first-child {
+	margin-left: 0;
+}
+
+input[type="submit"] {
+	width: 344px;
+	height: 45px;
+	border: none;
+	background: steelblue;
+	color: white;
+	cursor: pointer;
+}
+
+/* 疑似要素を使うと 1-3 */
+:disabled {
+	background-color: #ddd;
+}
+
+input[type="text"]:enabled {
+	background-color: yellow;
+}
+
+input[type="radio"]:checked + label {
+	font-weight: bold;
+}
+
+ul {
+	color: #222;
+	font: normal 1.3em sans-serif;
+	list-style-type: none;
+	margin: 0 auto;
+	padding: 0;
+	width: 70%;
+}
+
+li {
+	border: 1px solid;
+	margin: 12px 0;
+	padding: .6em;
+}
+
+/* 疑似要素を使うと 1-1,2*/
+li:nth-of-type(2n) {
+	background-color: grey;
+}

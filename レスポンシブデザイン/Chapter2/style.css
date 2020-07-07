@@ -1,0 +1,25 @@
+body {
+	padding: 1em 6em;
+}
+
+/* text-decorationの練習 */
+.one a:hover {
+	text-decoration: none;
+}
+
+/* 装飾の練習 */
+.two p {
+	text-indent: 10em;
+}
+
+.two h1 {
+	text-transform: uppercase;
+}
+
+.three h1 {
+	font-size: 50px;
+	color: skyblue;
+	text-shadow: 4px 3px 0px rgba(255, 255, 255, 1.0),
+		         9px 8px 0px rgba(0, 0, 0, .15);
+	background-color: brown;
+}
