@@ -1,0 +1,48 @@
+body {
+	font: 13px sans-serif;
+}
+
+header {
+}
+
+#firstview {
+	display: block;
+	background: url('photo/ponyo.jpg') no-repeat center;
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+	position: relative;
+}
+
+#firstview::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: black;
+	opacity: 0.5;
+	display: block;
+
+}
+
+.title {
+	position: absolute;
+	top: 50%;
+ 	left: 25%;
+ 	transform: translate(-15%, -50%);
+	color: white;
+}
+.title h1{
+	text-align: center;
+	font-size: 50px;
+}
+
+.title p {
+	font-size: 12px;
+}
+
+.beginning {
+	margin: 0 12%;
+}
