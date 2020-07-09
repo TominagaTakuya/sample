@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="stylesheet.css">
+    <meta charset="utf-8">
+    <title>ポニョ&ぽんぽこ</title>
+  </head>
+  <body>
+    <header>
+      <p class="logo">ようこそ我が家へ</p>
+      <ul class="nav">
+        <li>aaa</li>
+        <li>bbb</li>
+        <li>ccc</li>
+        <li>ddd</li>
+      </ul>
+      <!-- <p class="menu">menu</p> -->
+    </header>
+    <main>
+      <div class="top">
+        <!-- <img src="photo\volleyball-2021719_1920.jpg" alt="バレーボール" title="ポニョ" class="top_img"> -->
+        <img src="#" alt="バレーボール" title="ポニョ" class="top_img">
+        <p>
+          チームで団結して勝つことを目標にしています。基礎からチーム力を高める練習を行っています。
+        </p>
+      </div>
+      <div class="news">
+      </div>
+      <div class="contents">
+      </div>
+      <div class="info">
+      </div>
+    </main>
+    <footer>
+      <form method="CONTACT" action="#">
+        <fieldset>
+          <legend>目的</legend>
+          <select name="porpose">
+            <optgroup>
+              <option value="experience">体験希望</option>
+              <option value="visit">見学希望</option>
+              <option value="competition">対戦希望</option>
+              <option value="question">質問</option>
+              <option value="other">その他</option>
+            </optgroup>
+          </select>
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend>個人情報</legend>
+          <label for="name">氏名:</label><input type="text" name="name" id="name">
+          <label for="mail">メールアドレス:</label><input type="text" name="mail" id="mail">
+          <br><br>
+          <legend>性別</legend>
+          <input type="radio" name="gender" value="male" id="male"><label for="male">男性</label>
+          <input type="radio" name="gender" value="female" id="female"><label for="female">女性</label>
+          <br><br>
+          <legend>ポジション</legend>
+          <input type="checkbox" name="position" value="left">レフト
+          <input type="checkbox" name="position" value="center">センター
+          <input type="checkbox" name="position" value="right">ライト
+          <input type="checkbox" name="position" value="setter">セッター
+          <input type="checkbox" name="position" value="libero">リベロ
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend>備考</legend>
+          <textarea name="detail" rows="8" cols="140"></textarea><br>
+        </fieldset>
+        <br>
+        <input type="submit" value="送信">
+      </form>
+    </footer>
+  </body>
+</html>
